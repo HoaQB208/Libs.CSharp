@@ -4,11 +4,10 @@ namespace Libs.CSharp.WindowsSystem
 {
     public class ScreenUtils
     {
-        public static (double, double) GetPrimaryScreenSize()
+        public static void GetPrimaryScreenSize(out double screenWidth, out double screenHeight)
         {
-            double screenWidth = SystemParameters.PrimaryScreenWidth;
-            double screenHeight = SystemParameters.PrimaryScreenHeight;
-            return (screenWidth, screenHeight);
+            screenWidth = SystemParameters.PrimaryScreenWidth;
+            screenHeight = SystemParameters.PrimaryScreenHeight;
         }
     }
 }
