@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Libs.CSharp.Encryption
 {
-    public class Encoding
+    public class SHAHelper
     {
         public static async Task<string> SHA1(string filePath)
         {
